@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into to CSS</title>
+    <style>
+        /* CSS Selectors 
+        create selector :
+        type {
+        property : value;
+        property : value;
+        property : value;
+        property : value;
+        }
+
+        type : tag, class, id
+        
+        */
+        /* tag selector */
+        h1, h2{
+            background-color: rgb(15, 15, 172);
+            color: white;
+            text-align: center;
+            border-radius: 3px;
+            padding: 15px;
+            box-shadow: 10px -10px 10px black;
+            border: 2px solid rgb(39, 244, 224);
+        }
+        #main-title{
+            background-color: rgb(64, 177, 113);
+            color: black;
+            border-color: darkgreen;
+        }
+        
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 140%;
+        }
+        code{
+            background-color: black;
+            color: white;
+            font-size: 22px;
+            font-family: monospace;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        mark{
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 10px;
+            background-color: bisque;
+        }
+
+        /* class selector */
+        .main-word, .styled{
+            color: gray;
+            font-size: 22px;
+            border: 1px solid darkgray;
+            padding: 2px;
+        }
+        .styled{
+            text-decoration: underline;
+            font-weight: normal;
+        }
+        body{
+            background-color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .serif{
+            font-family: serif;
+        }
+        .sans-serif{
+            font-family: sans-serif;
+        }
+        .monospace{
+            font-family: monospace;
+        }
+        .cursive{
+            font-family: cursive;
+        }
+        .fantasy{
+            font-family: fantasy;
+        }
+        .red{
+            color: red;
+        }
+        .orange{
+            color: orange;
+        }
+        .green{
+            color: green;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Intro to <abbr title="Cascading Style Sheets">CSS</abbr></h1>
+
+    <h2 style="background-color: rgb(0, 247, 255);color: white;text-align: center;">Inline styles</h2>
+    <p style="color: rgb(59, 113, 113);font-weight: 700;">Lorem ipsum 
+        H<sub>2</sub>O - water      2<sup>2</sup> =4
+        <span class="red">dolor sit amet,</span>
+         consectetur adipisicing elit.
+          <span class="orange">dolor sit amet,</span> Quasi fugit quam molestias perspiciatis
+           <span class="green">dolor sit amet,</span> ipsam libero! Eveniet nam, repellendus esse aut tenetur non? Maxime consequatur consequuntur cum quo, nulla quidem, iste sed quibusdam veritatis omnis a soluta. Iusto, eveniet iste. Sit debitis magni tenetur est explicabo soluta atque, nihil quis corrupti?</p>
+
+    <hr>
+
+    <h2>Style with CSS selectors</h2>
+    <!-- p>lorem -->
+    <p>
+        Lorem 
+        <strong class="main-word">ipsum</strong>  dolor sit amet,
+         <strong class="styled">ipsum</strong>  consectetur 
+        Lorem ipsum dolor sit amet, consectetur 
+        Lorem ipsum dolor sit amet, consectetur 
+        <code>number = 10</code>
+        <code>print(number)</code>
+        adipisicing elit. Quae sequi, consectetur laborum delectus, molestiae sit molestias <br>
+        <br>
+        <code>if elif else</code>
+        <br>
+        <br>
+        maxime 
+        <mark>provident</mark> , fugit perspiciatis praesentium 
+        <mark>praesentium</mark> iure modi iste repellendus.
+        <mark>repellendus</mark>  Dignissimos dolores hic odit facilis.</p>
+    <h2>Style with CSS selectors</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, odio. Ipsam quam saepe architecto repudiandae voluptates soluta consectetur, eum neque porro et expedita quis, obcaecati deleniti temporibus! Animi, ut necessitatibus?</p>
+    <h2>Style with CSS selectors</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores ea in aliquid, magni consectetur ullam nisi qui cum optio praesentium similique quod repellendus ex quidem atque officiis et laborum!</p>
+
+    <h2>Serif font</h2>
+    <p class="serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+
+    <h2>Sans-Serif font</h2>
+    <p class="sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+
+    <h2>Monospace font</h2>
+    <p class="monospace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+
+    <h2>Cursive font</h2>
+    <p class="cursive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+
+    <h2>Fantasy font</h2>
+    <p class="fantasy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque?</p>
+</body>
+</html>
