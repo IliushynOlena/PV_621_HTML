@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .custom-ul-style{
+            list-style-type: square;
+            list-style-position: inside;
+            padding:10px;
+            list-style-image: url(./markers/leaf.png);
+        }
+        ol{
+            list-style-type:upper-roman;
+        }
+        ol li::marker{
+            color: red;
+            font-weight: 800;
+        }
+        ul li{
+            color: green;
+        }
+        dt{
+            color: darkgreen;
+            font-weight: bold;
+        }
+        dd{
+            color: green;
+            background-color: lightgreen;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+        }
+        .markered-list{
+            list-style-type: none;
+            counter-reset: number;
+        }
+        .markered-list li::before{
+            /* content: ' - '; */
+            content: counter(number) ') ';
+            counter-increment: number;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Working with Lists</h1>
+
+    <h2>Custom Marker to List</h2>
+    <ol class="markered-list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Rem ea quasi doloribus doloremque?</li>
+        <li>Unde quas provident repellendus vitae.</li>
+        <li>Maxime praesentium pariatur nulla modi?</li>
+        <li>Ducimus odit nesciunt dicta? Nihil!</li>
+        <li>Earum facilis iste repellat commodi.</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+<!-- ul>li*4>lorem8 -->
+ <ul class="custom-ul-style">
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consecteturLorem, ipsum dolor sit amet consectetur</li>
+    <li>Ipsum harum facilis officia pariatur, doloremque architecto veritatis.</li>
+    <li>Tempora itaque magnam accusamus, sequi quis modi accusantium.</li>
+    <li>Ab quo veritatis culpa rerum possimus nihil corrupti!</li>
+ </ul>
+
+ <h2>Ordered List</h2>
+ <!-- ol>li*5>lorem9 -->
+  <ol start="10" reversed>
+    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt.</li>
+    <li>Doloribus, maxime. Voluptate aperiam illo, aliquid sunt reprehenderit sapiente.</li>
+    <li>Unde quos saepe corporis itaque vero iste voluptatem cumque.</li>
+    <li value="20">Nostrum inventore quidem amet ipsum tempora, fugiat incidunt nulla.</li>
+    <li>Fugit ullam officiis, beatae dolore consequuntur fuga praesentium saepe.</li>
+    <li>Fugit ullam officiis, beatae dolore consequuntur fuga praesentium saepe.</li>
+    <li>Fugit ullam officiis, beatae dolore consequuntur fuga praesentium saepe.</li>
+    <li>Fugit ullam officiis, beatae dolore consequuntur fuga praesentium saepe.</li>
+    <li>Fugit ullam officiis, beatae dolore consequuntur fuga praesentium saepe.</li>
+  </ol>
+
+  <h2>Defenition List</h2>
+  <dl>
+    <!-- dt - definition title -->
+    <!-- dd - definition data -->
+    <dt>HTML</dt> 
+    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae delectus neque cum, sint ut magni adipisci nesciunt necessitatibus cumque doloremque voluptas voluptate ab, iusto quia incidunt, distinctio enim. Ab!</dd>
+
+     <dt>CSS l;dgldfjldfgjlfk</dt>
+    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae delectus neque cum, sint ut magni adipisci nesciunt necessitatibus cumque doloremque voluptas voluptate ab, iusto quia incidunt, distinctio enim. Ab!</dd>
+
+
+  </dl>
+
+
+    
+</body>
+</html>
