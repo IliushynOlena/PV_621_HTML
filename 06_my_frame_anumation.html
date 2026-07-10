@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame animation</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        #bullet {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: goldenrod;
+
+            margin-left: 0;
+
+            transition: margin-left 1s ease-out;
+        }
+
+        #bullet:active {
+            margin-left: 90%;
+        }
+
+        #square {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(32, 218, 85);
+            margin-left: 0;
+
+            position: fixed;
+             /* animation: name duration timing-function(ease) 
+             delay(0) iteration-count direction fill-mode; */
+            animation: move 2s infinite reverse ;
+        }
+        @keyframes move {
+            from {
+                left: 95vw;             
+                top: 0;
+            }
+
+            to {
+                left: 0;             
+                top: 95vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bullet"></div>
+    <div id="square"></div>
+
+</body>
+
+</html>
